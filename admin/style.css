@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 2px solid #eee;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+}
+
+.logo img{
+    width: 70px;
+    display: flex;
+}
+
+.logo span {
+  color: #4f4fd1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.login-button {
+  border: 2px solid #d946ef;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: #d946ef;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+}
+
+.content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #d946ef;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn.grey {
+  background-color: #999;
+  color: white;
+}
+
+.btn.outlined {
+  border: 2px solid #d946ef;
+  color: #d946ef;
+}
+
+.image img {
+  max-width: 500px;
+}
+
+.section_container {
+  padding: 15px 40px;
+}
+
+#produk h2 {
+  margin-bottom: 20px;
+}
+
+.content-produk {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 70vh;
+  object-fit: contain;
+}
+
+.info-produk {
+  padding: 20px;
+}
+
+.info-produk h2 {
+  margin-bottom: 20px;
+}
+
+.info-produk p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+
+}
+
+.info-produk .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d946ef;
+  color: #fff;
+  padding: 0.8rem 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all ease 0.3s;
+}
+
+.info-produk .cta:hover {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.liquid{
+  color: #000;
+}
+
+.tabs button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabs button.active {
+  background-color: #d946ef;
+  color: white;
+}
+
+.about-section {
+  display: flex;
+  padding: 50px;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.image-kiri img {
+  width: 400px;
+  height: auto;
+}
+
+.konten-tengah {
+  flex: 1.5;
+}
+
+.konten-tengah h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.blok {
+  margin-bottom: 25px;
+}
+
+.blok h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.konten-kanan {
+  flex: 1;
+  text-align: center;
+}
+
+.circle-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.contact-section {
+  background-color: #c55bbb;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 50px 100px;
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+}
+
+.contact-left p,
+.contact-right p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 2px;
+  background-color: white;
+  height: 100px;
+  margin: 0 30px;
+}
+
+.icon {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.footer {
+  background-color: #c5c5c5;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #333;
+  margin-top: 40px;
+}
